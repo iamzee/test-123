@@ -34,4 +34,5 @@ jobs:
 workflows:
     my_app_workflow:
         jobs:
-            - run_tests
+            - test_app
+            - build_app
