@@ -14,8 +14,6 @@ jobs:
                   name: Run unit tests
                   command: |
                       npm run test
-
-jobs:
     build_app:
         docker:
             - image: circleci/node:16.8.0
@@ -29,7 +27,6 @@ jobs:
                   name: Run build app
                   command: |
                       npm run build
-
 
 workflows:
     my_app_workflow:
