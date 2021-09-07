@@ -1,22 +1,20 @@
 version: 2.1
 
-orbs:
-    node: circle/node@4.7.0
-
 jobs:
-    test:
-        executor:
-            name: node/default
-            tag: '16.8.0'
+    run_tests:
+        docker:
+            - image: circleci/node:16.8.0
         steps:
             - checkout
-            - node/install-packages
             - run:
-              command: npm run test
+              name: Installing dependencies
+              command: |
+                  npm install --save
+            - run:
+              name: Running unit tests
+              command: |
+                  npm run test
 
 workflows:
-    my-app-workflow:
-        jobs:
-            - test
-            - node/run:
-              npm-run: build
+    my_app_workflow:
+        jobs: run_tests
