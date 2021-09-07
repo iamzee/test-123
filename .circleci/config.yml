@@ -1,0 +1,25 @@
+orbs:
+    node: circle/node@2.0.2
+
+version: 2.1
+
+jobs:
+    install:
+        steps:
+            - checkout
+            - run: npm install
+
+    test:
+        steps:
+            - run: npm run test
+
+    buils:
+        steps:
+            - run: npm run build
+
+workflows:
+    final:
+        jobs:
+            - install
+            - test
+            - build
