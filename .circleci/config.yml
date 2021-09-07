@@ -14,13 +14,9 @@ jobs:
             - run:
               command: npm run test
 
-    build:
-        steps:
-            - run:
-              command: npm run build
-
 workflows:
     my-app-workflow:
         jobs:
             - test
-            - build
+            - node/run:
+              npm-run: build
