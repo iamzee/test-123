@@ -13,7 +13,7 @@ jobs:
         steps:
             - run: npm run test
 
-    buils:
+    build:
         steps:
             - run: npm run build
 
