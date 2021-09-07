@@ -17,4 +17,5 @@ jobs:
 
 workflows:
     my_app_workflow:
-        jobs: run_tests
+        jobs:
+            - run_tests
