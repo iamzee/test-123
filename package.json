@@ -1,0 +1,28 @@
+{
+	"name": "v",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "webpack --config webpack.config.js --watch",
+		"start": "node dist/main.js",
+		"test": "jest"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@types/jest": "^27.0.1",
+		"@types/stream-json": "^1.7.1",
+		"jest": "^27.1.0",
+		"nodemon": "^2.0.12",
+		"stream-chain": "^2.2.4",
+		"stream-json": "^1.7.2",
+		"ts-jest": "^27.0.5",
+		"ts-loader": "^9.2.5",
+		"typescript": "^4.4.2",
+		"webpack": "^5.52.0"
+	},
+	"devDependencies": {
+		"webpack-cli": "^4.8.0"
+	}
+}
