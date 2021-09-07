@@ -1,25 +1,26 @@
-orbs:
-    node: circle/node@2.0.2
-
 version: 2.1
 
+orbs:
+    node: circle/node@4.7.0
+
 jobs:
-    install:
+    test:
+        executor:
+            name: node/default
+            tag: '16.8.0'
         steps:
             - checkout
-            - run: npm install
-
-    test:
-        steps:
-            - run: npm run test
+            - node/install-packages
+            - run:
+              command: npm run test
 
     build:
         steps:
-            - run: npm run build
+            - run:
+              command: npm run build
 
 workflows:
-    final:
+    my-app-workflow:
         jobs:
-            - install
             - test
             - build
