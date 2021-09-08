@@ -1,12 +1,8 @@
 [
-	{ "Gender": "Female", "HeightCm": 153, "WeightKg": 104 },
-	{ "Gender": "Male", "HeightCm": 157, "WeightKg": 65 },
-	{ "Gender": "Female", "HeightCm": 176, "WeightKg": 78 },
-	{ "Gender": "Female", "HeightCm": 173, "WeightKg": 105 },
-	{ "Gender": "Male", "HeightCm": 163, "WeightKg": 78 },
-	{ "Gender": "Female", "HeightCm": 176, "WeightKg": 62 },
-	{ "Gender": "Female", "HeightCm": 167, "WeightKg": 83 },
-	{ "Gender": "Male", "HeightCm": 161, "WeightKg": 118 },
-	{ "Gender": "Female", "HeightCm": 164, "WeightKg": 63 },
-	{ "Gender": "Female", "HeightCm": 155, "WeightKg": 79 }
+	{ "Gender": "Male", "HeightCm": 171, "WeightKg": 96 },
+	{ "Gender": "Male", "HeightCm": 161, "WeightKg": 85 },
+	{ "Gender": "Male", "HeightCm": 180, "WeightKg": 77 },
+	{ "Gender": "Female", "HeightCm": 166, "WeightKg": 62 },
+	{ "Gender": "Female", "HeightCm": 150, "WeightKg": 70 },
+	{ "Gender": "Female", "HeightCm": 167, "WeightKg": 82 }
 ]
